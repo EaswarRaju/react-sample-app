@@ -1,0 +1,25 @@
+.app-container {
+  display: inline-flex;
+  flex-direction: column;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+
+  .app-content {
+    padding: 20px;
+    background-color: white;
+
+    .featured {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .search {
+    width: 300px;
+    height: 30px;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+}

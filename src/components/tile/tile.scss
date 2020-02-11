@@ -1,0 +1,36 @@
+@import '../../assets/common.scss';
+
+$tile-color: #f5f6fa;
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  margin: $tile-margin;
+  background-color: $tile-color;
+
+  .image {
+    width: $tile-width;
+    height: $tile-width;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-details {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+
+    .location {
+      display: flex;
+      align-items: center;
+
+      path {
+        fill: $font-color;
+      }
+
+      circle {
+        fill: $tile-color;
+      }
+    }
+  }
+}
